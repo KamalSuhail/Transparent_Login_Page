@@ -1,60 +1,83 @@
 body {
     font-family: Arial, sans-serif;
-    background: white;
+    background-image: url(wallpaperflare.com_wallpaper\ \(1\).jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.login-box {
-    background-color: whitesmoke;
-    border-radius: 7px;
-    box-shadow: 0 0 10px rgba(0,0,0);
-    padding: 20px;
-    width: 300px;
+.container {
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
 }
 
-.login-box h1{
-    color: red;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: black;
-}
-
-.form-group input {
+.container .wrapper{
     width: 100%;
-    border-radius: 5px;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    font-size: 14px;
+    color: white;
 }
 
-.form-group button {
+.wrapper h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.wrapper .inputs{
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 8% 10%;
+    justify-content: space-between;
+}   
+
+.inputs input{
+    width: 90%;
+    padding-left: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: white;
+}
+
+.inputs label {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
     background-color: green;
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 7% 10%;
+    width: 50%;
+    height: 6vh;
 }
 
-.form-group button:hover {
-    background-color: limegreen;
+.button:hover {
+    background-color: indianred;
+    scale: 1.1;
 }
