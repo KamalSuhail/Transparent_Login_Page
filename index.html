@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Transparent Login Page</title>
 </head>
 <body>
     <div class="container">
@@ -12,13 +13,28 @@
         <h1>Login Here👇</h1>
             <div class="inputs">
                 <input type="text" placeholder="Username" required>
-                <label for=""></label>
+                <label for=""><i class="fa-solid fa-user"></i></label>
             </div>
             <div class="inputs">
                 <input type="password" placeholder="Password" required>
-                <label for=""></label>
+                <label for=""><i class="fa-solid fa-lock"></i></label>
+            </div>
+            <div class="remember-forget">
+                <div class="remember">
+                    <input type="checkbox">
+                    <label for="">Remember me</label>
+                </div>
+                <div class="forget">
+                    <a href="">Forget Password ?</a>
+                </div>
             </div>
                 <button class="button" type="submit">Login</button>
+                <p>----- <span>Or Sign Up Using👇</span> -----</p>
+            <div class="social-links">
+                <div class="google"><i class="fa-brands fa-google"></i></div>
+                <div class="twitter"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+            </div>
     </div>
 </div>
 </body>

@@ -29,7 +29,8 @@ body {
 
 .wrapper h1{
     text-align: center;
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
     margin: 10px 0;
 }
 
@@ -63,8 +64,33 @@ body {
     align-items: center;
 }
 
+.remember-forget {
+    display: block;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.remember-forget .remember {
+    margin-top: -20px;
+    line-height: 40px;
+}
+
+.remember-forget .forget {
+    margin-top: 10px;
+}
+ 
+.remember-forget .forget a {
+    color: white;
+    text-decoration: none;
+}
+
+.forget a:hover {
+    color: red;
+}
+
 .button {
-    background-color: green;
+    background-color: white;
     color: white;
     padding: 10px;
     border: none;
@@ -75,9 +101,91 @@ body {
     margin: 7% 10%;
     width: 50%;
     height: 6vh;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid none;
+    z-index: 0;
 }
 
-.button:hover {
-    background-color: indianred;
-    scale: 1.1;
+.button:hover::after {
+    top: 0;
+    left: 0;
+}
+
+.button::after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    border-radius: 8px;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: green;
+}
+
+
+p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+p span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.social-links {
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-evenly;
+}
+
+.social-links div i {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.social-links .google i {
+    background-color: red;
+    box-shadow: 0 0 50px red;
+    color: white;
+}
+
+.google i:hover {
+    box-shadow: 0 0 20px red;
+    color: red;
+    background-color: transparent;
+}
+
+.social-links .twitter i {
+    background-color: black;
+    box-shadow: 0 0 50px black;
+    color: white;
+}
+
+.twitter i:hover {
+    box-shadow: 0 0 20px black;
+    color: black;
+    background-color: transparent;
+}
+
+.social-links .facebook i {
+    background-color: blue;
+    box-shadow: 0 0 50px blue;
+    color: white;
+}
+
+.facebook i:hover {
+    box-shadow: 0 0 20px blue;
+    color: blue;
+    background-color: transparent;
 }
