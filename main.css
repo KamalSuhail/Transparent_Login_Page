@@ -71,6 +71,10 @@ body {
     justify-content: space-between;
 }
 
+.remember input[type="checkbox"] {
+    cursor: pointer;
+}
+
 .remember-forget .remember {
     margin-top: -20px;
     line-height: 40px;
@@ -141,6 +145,12 @@ p span {
     display: flex;
     margin: 30px 0px;
     justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit; 
 }
 
 .social-links div i {
